@@ -4,14 +4,14 @@ pipeline {
     environment {
         DOCKER_IMAGE = "salary-finder"
         DOCKER_TAG   = "1.0"
-        DOCKERHUB_USER = "harsh101011"  // change this
+        DOCKERHUB_USER = "harsh101011"
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/harsh101011/salary-finder-java.git'
+                    url: 'https://github.com/Harsh101011/salary-finder-java.git'
             }
         }
 
